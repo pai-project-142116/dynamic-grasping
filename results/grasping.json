@@ -1,0 +1,564 @@
+{
+  "summary": {
+    "none": {
+      "trials": 11,
+      "lift_reached": 0
+    },
+    "mlp": {
+      "trials": 11,
+      "lift_reached": 8
+    }
+  },
+  "trials": [
+    {
+      "trial": 0,
+      "method": "none",
+      "kind": "x_line",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": true,
+      "seed": 20,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "x_line",
+        "speed": 0.1,
+        "center": [
+          0.1,
+          0.5
+        ],
+        "radius": 0.09,
+        "phase": 0.6499999999999999,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 2,
+      "method": "mlp",
+      "kind": "x_line",
+      "speed": 0.1,
+      "lift_reached": true,
+      "original_one_second_hold": true,
+      "right_contact_max_run_seconds": 1.7,
+      "end_hold": true,
+      "seed": 20,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "x_line",
+        "speed": 0.1,
+        "center": [
+          0.1,
+          0.5
+        ],
+        "radius": 0.09,
+        "phase": 0.6499999999999999,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 3,
+      "method": "mlp",
+      "kind": "x_line",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 21,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "x_line",
+        "speed": 0.1,
+        "center": [
+          0.105,
+          0.495
+        ],
+        "radius": 0.085,
+        "phase": 2.5500000000000003,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 5,
+      "method": "none",
+      "kind": "x_line",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 21,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "x_line",
+        "speed": 0.1,
+        "center": [
+          0.105,
+          0.495
+        ],
+        "radius": 0.085,
+        "phase": 2.5500000000000003,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 6,
+      "method": "none",
+      "kind": "circle",
+      "speed": 0.05,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 20,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "circle",
+        "speed": 0.05,
+        "center": [
+          0.1,
+          0.5
+        ],
+        "radius": 0.09,
+        "phase": 0.6499999999999999,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 8,
+      "method": "mlp",
+      "kind": "circle",
+      "speed": 0.05,
+      "lift_reached": true,
+      "original_one_second_hold": true,
+      "right_contact_max_run_seconds": 2.0,
+      "end_hold": true,
+      "seed": 20,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "circle",
+        "speed": 0.05,
+        "center": [
+          0.1,
+          0.5
+        ],
+        "radius": 0.09,
+        "phase": 0.6499999999999999,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 9,
+      "method": "mlp",
+      "kind": "circle",
+      "speed": 0.1,
+      "lift_reached": true,
+      "original_one_second_hold": true,
+      "right_contact_max_run_seconds": 1.72,
+      "end_hold": true,
+      "seed": 21,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "circle",
+        "speed": 0.1,
+        "center": [
+          0.105,
+          0.495
+        ],
+        "radius": 0.085,
+        "phase": 2.5500000000000003,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 11,
+      "method": "none",
+      "kind": "circle",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 21,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "circle",
+        "speed": 0.1,
+        "center": [
+          0.105,
+          0.495
+        ],
+        "radius": 0.085,
+        "phase": 2.5500000000000003,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 12,
+      "method": "none",
+      "kind": "square",
+      "speed": 0.05,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 20,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "square",
+        "speed": 0.05,
+        "center": [
+          0.1,
+          0.5
+        ],
+        "radius": 0.09,
+        "phase": 0.6499999999999999,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 14,
+      "method": "mlp",
+      "kind": "square",
+      "speed": 0.05,
+      "lift_reached": true,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.24,
+      "end_hold": false,
+      "seed": 20,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "square",
+        "speed": 0.05,
+        "center": [
+          0.1,
+          0.5
+        ],
+        "radius": 0.09,
+        "phase": 0.6499999999999999,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 15,
+      "method": "mlp",
+      "kind": "square",
+      "speed": 0.1,
+      "lift_reached": true,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.26,
+      "end_hold": false,
+      "seed": 21,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "square",
+        "speed": 0.1,
+        "center": [
+          0.105,
+          0.495
+        ],
+        "radius": 0.085,
+        "phase": 2.5500000000000003,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 17,
+      "method": "none",
+      "kind": "square",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 21,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "square",
+        "speed": 0.1,
+        "center": [
+          0.105,
+          0.495
+        ],
+        "radius": 0.085,
+        "phase": 2.5500000000000003,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 18,
+      "method": "none",
+      "kind": "lissajous12",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 20,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "lissajous12",
+        "speed": 0.1,
+        "center": [
+          0.1,
+          0.5
+        ],
+        "radius": 0.09,
+        "phase": 0.6499999999999999,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 20,
+      "method": "mlp",
+      "kind": "lissajous12",
+      "speed": 0.1,
+      "lift_reached": true,
+      "original_one_second_hold": true,
+      "right_contact_max_run_seconds": 2.9,
+      "end_hold": true,
+      "seed": 20,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "lissajous12",
+        "speed": 0.1,
+        "center": [
+          0.1,
+          0.5
+        ],
+        "radius": 0.09,
+        "phase": 0.6499999999999999,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 21,
+      "method": "mlp",
+      "kind": "lissajous12",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 21,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "lissajous12",
+        "speed": 0.1,
+        "center": [
+          0.105,
+          0.495
+        ],
+        "radius": 0.085,
+        "phase": 2.5500000000000003,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 23,
+      "method": "none",
+      "kind": "lissajous12",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 21,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "lissajous12",
+        "speed": 0.1,
+        "center": [
+          0.105,
+          0.495
+        ],
+        "radius": 0.085,
+        "phase": 2.5500000000000003,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 24,
+      "method": "none",
+      "kind": "y_line",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 22,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "y_line",
+        "speed": 0.1,
+        "center": [
+          0.095,
+          0.505
+        ],
+        "radius": 0.085,
+        "phase": 1.0,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 26,
+      "method": "mlp",
+      "kind": "y_line",
+      "speed": 0.1,
+      "lift_reached": true,
+      "original_one_second_hold": true,
+      "right_contact_max_run_seconds": 1.18,
+      "end_hold": true,
+      "seed": 22,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "y_line",
+        "speed": 0.1,
+        "center": [
+          0.095,
+          0.505
+        ],
+        "radius": 0.085,
+        "phase": 1.0,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 27,
+      "method": "mlp",
+      "kind": "diagonal",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 22,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "diagonal",
+        "speed": 0.1,
+        "center": [
+          0.095,
+          0.505
+        ],
+        "radius": 0.085,
+        "phase": 1.0,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 29,
+      "method": "none",
+      "kind": "diagonal",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 22,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "diagonal",
+        "speed": 0.1,
+        "center": [
+          0.095,
+          0.505
+        ],
+        "radius": 0.085,
+        "phase": 1.0,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 30,
+      "method": "none",
+      "kind": "lissajous34",
+      "speed": 0.1,
+      "lift_reached": false,
+      "original_one_second_hold": false,
+      "right_contact_max_run_seconds": 0.0,
+      "end_hold": false,
+      "seed": 22,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "lissajous34",
+        "speed": 0.1,
+        "center": [
+          0.095,
+          0.505
+        ],
+        "radius": 0.085,
+        "phase": 1.0,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    },
+    {
+      "trial": 32,
+      "method": "mlp",
+      "kind": "lissajous34",
+      "speed": 0.1,
+      "lift_reached": true,
+      "original_one_second_hold": true,
+      "right_contact_max_run_seconds": 0.54,
+      "end_hold": true,
+      "seed": 22,
+      "chunk_size": 10,
+      "trajectory": {
+        "kind": "lissajous34",
+        "speed": 0.1,
+        "center": [
+          0.095,
+          0.505
+        ],
+        "radius": 0.085,
+        "phase": 1.0,
+        "delta": 0.22,
+        "angle": 0.7,
+        "direction": 1
+      }
+    }
+  ]
+}

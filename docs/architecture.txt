@@ -1,0 +1,41 @@
+ファイルの役割
+  src/policy_node.py          ROS 2：画像と関節を同期し，VLAの関節指令列を返す
+  src/sim_node.py             ROS 2：観測送信，指令実行，実時間進行，記録
+  src/ros_units.py            ROSとVLAのグリッパー単位変換
+  src/policy.py               公式OpenPIへの通信と画像前処理
+  src/simulation.py           公開ALOHA環境の作成，観測・接触の取得
+  src/block_paths.py          XY座標・速度の計算．学習と実行で共用
+  src/block_motion.py         MuJoCoでの物体移動と両指接触時の軌道解除
+  src/red_block_detection.py  赤色重心検出と平面座標変換．学習と実行で共用
+  src/object_tracker.py       検出位置の履歴とMLP予測，観測間の時間補間
+  src/correction.py           手先補正，微分IK，左右関節指令の連続化
+  training/collect_dataset.py 画像由来XYと未来位置の教師を収集
+  training/prepare_dataset.py 訓練・検証の履歴窓を作成
+  training/train_predictor.py MLPをCPUで学習し，重みをNumPy形式で出力
+
+オンライン処理
+  カメラ：top RGB 640×480，10 Hz．VLA画像は公式前処理で224×224へ変換
+  VLA：同時刻の画像と実関節14値 → 50点×14値の関節目標．実行例では先頭10点を使用
+  関節14値：左6関節角＋左グリッパー＋右6関節角＋右グリッパー
+  角度はrad，グリッパーはVLA側で0～1，ROS側で片側指変位[m]
+  画像予測：10 Hzの位置履歴10点 → 将来0.1～0.5秒のXY列5点
+  後段：50 Hzで予測列を補間し，現在から100 ms先のXYを狙う
+  観測間は画像が増えるのではなく，観測後の経過時間に応じて予測位置が変化する
+
+  予測XYと現在のchunkの観測時XYとの差を，VLA指令をFKした手先XYへ加える．
+  机への接近後は，予測ブロック位置と把持点のオフセットへ直接合わせる．
+  右腕のIKは位置と指の水平条件を使い，直前指令から小さく更新する．
+  両腕の最終指令を速度2 rad/s・加速度12 rad/s²の範囲で接続する．
+  これは指令の制約で，物理シミュレーション中の実関節速度の保証ではない．
+  実関節と画像から閉指段階を推定し，補正を一時保持した後に減衰する．
+  物体真値・軌道設定・接触真値・解除フラグは後段へ渡さない．
+  真値は環境での軌道移動，学習教師，結果評価に使用する．
+
+ROSトピック
+  /aloha/joint_states：JointState，50 Hz
+  /aloha/top/image：Image，次のVLA予測を要求するときだけ送信
+  /aloha/action_chunk：JointTrajectory，元の観測時刻と10点の関節目標
+  状態と画像のヘッダーは同じ実時間．use_sim_time=false
+  標準のROS軌道コントローラーではなく，sim_nodeが受信後20 ms間隔で実行する．
+  指令列を使い切ってから次の予測を要求し，推論待ちでも物理は最後の目標で進む．
+  ROS・制御は50 Hz，MuJoCo内部積分は2 ms．観測から指令到着までの時間も記録する．

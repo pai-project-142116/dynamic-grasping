@@ -1,0 +1,13 @@
+{
+  "kind": "square",
+  "speed": 0.05,
+  "center": [
+    0.1,
+    0.5
+  ],
+  "radius": 0.09,
+  "phase": 1.15,
+  "delta": 0.22,
+  "angle": 0.7,
+  "direction": 1
+}

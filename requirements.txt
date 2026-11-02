@@ -1,0 +1,10 @@
+gym-aloha==0.1.5
+mujoco==3.1.6
+dm-control==1.0.20
+gymnasium==1.0.0
+numpy==1.26.4
+scipy==1.17.1
+imageio==2.38.1
+imageio-ffmpeg==0.6.0
+Pillow==13.0.0
+websockets==17.3

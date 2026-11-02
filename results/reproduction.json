@@ -1,0 +1,27 @@
+{
+  "dataset_arrays_identical": true,
+  "model_weight_arrays_identical": true,
+  "trajectory_configs_compared": 126,
+  "trajectory_samples_per_config": 200,
+  "collected_episode_arrays_identical": true,
+  "calibration_arrays_identical": true,
+  "tracker_prediction_parity": true,
+  "motion_and_release_parity": true,
+  "controller_physics_smoke_steps": 50,
+  "ros_entrypoints_help_passed": true,
+  "full_vla_rollout_repeated": false,
+  "model_sha256": "0c4eef5dd15f2bc9612330729f0666da7f98c6ff9136ab6880579b4e3db07ac2",
+  "python_files": 13,
+  "python_lines_including_comments_and_blanks": 677,
+  "training": {
+    "seed": 27,
+    "epochs": 300,
+    "best_epoch": 297,
+    "parameters": 7434,
+    "seconds": 8.946913184016012,
+    "device": "cpu",
+    "validation_coordinate_rmse_mm": 4.615884827065441,
+    "torch_version": "2.7.1+cu126",
+    "numpy_version": "1.26.4"
+  }
+}
